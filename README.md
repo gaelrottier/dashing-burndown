@@ -8,12 +8,11 @@ This [Dashing](http://shopify.github.io/dashing/) widget allows you to see the c
 
 ## Usage
 
-1. If you don't already have it, install [Dashing](http://shopify.github.io/dashing/).
 1. Clone the project `git clone https://github.com/gaelrottier/dashing-burndown.git`.
 2. Run `bundle install`.
-3. Get a Pivotal Tracker API token from your [Account Dashboard](https://www.pivotaltracker.com/profile), or execute `curl -u $USERNAME:$PASSWORD -X GET https://www.pivotaltracker.com/services/v3/tokens/active` in the command line, then set `TOKEN` in Burndown.rb to it.
-4. Get the id of the project you want to track, that can be found in the url of the project, `https://www.pivotaltracker.com/s/projects/$PROJECT_ID`, or by running `curl -H "X-TrackerToken: $TOKEN" -X GET http://www.pivotaltracker.com/services/v3/projects` in command line.
-5. If you haven't been using Pivotal Tracker since the start of your project, set `ITERATION_NUMBER_OFFSET` in `Burndown.rb` to the number of iterations you want to add to the total of iterations of the project.
+3. Get a Pivotal Tracker API token from your [Account Dashboard](https://www.pivotaltracker.com/profile), or execute `curl -u $USERNAME:$PASSWORD -X GET https://www.pivotaltracker.com/services/v3/tokens/active` in the command line, then set `TOKEN` in jobs/burndown.rb to it.
+4. Get the id of the project you want to track, that can be found in the url of the project, `https://www.pivotaltracker.com/s/projects/$PROJECT_ID`, or by running `curl -H "X-TrackerToken: $TOKEN" -X GET http://www.pivotaltracker.com/services/v3/projects` in command line, and set `PROJECT` in jobs/burndown.rb to it.
+5. If you haven't been using Pivotal Tracker since the start of your project, set `ITERATION_NUMBER_OFFSET` in `jobs/burndown.rb` to the number of iterations you want to add to the total of iterations of the project.
 
 
 ## Preview

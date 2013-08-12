@@ -1,0 +1,49 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #12B0C5;
+
+$moreinfo-color:    rgba(255, 255, 255, 0.3);
+$tick-color:        rgba(0, 0, 0, 0.4);
+
+
+// ----------------------------------------------------------------------------
+// Widget-burndown styles
+// ----------------------------------------------------------------------------
+.widget-burndown {
+
+  background-color: $background-color;
+  position: relative;
+
+  svg {
+    position: absolute;
+    opacity: 1;
+    fill-opacity: 1;
+    left: 0;
+    bottom: 0;
+  }
+
+  .title {
+    color: darken($background-color, 30%);
+    font-size: smaller;
+    top: -20px;
+    right: 0px;
+    left: 0px;
+    position: absolute;
+    margin-top: 1em;
+  }
+
+  .max-points, .points {
+    position: absolute;
+    z-index: 1;
+    font-size: 100%;
+  }
+
+  .max-points {
+    left: 0.5%;
+  }
+
+  .points {
+    line-height: 1em;
+  }
+}

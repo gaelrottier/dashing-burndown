@@ -83,6 +83,7 @@ GEM
     thor (0.18.1)
     tilt (1.4.1)
     tzinfo (1.0.1)
+    yard (0.8.6.2)
 
 PLATFORMS
   ruby
@@ -90,3 +91,4 @@ PLATFORMS
 DEPENDENCIES
   dashing
   pivotal-tracker!
+  yard

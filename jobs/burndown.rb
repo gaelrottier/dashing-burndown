@@ -24,7 +24,7 @@ class Burndown
   # The API key of your account
   TOKEN = ''
   # The number of the project to track
-  PROJECT =
+  PROJECT = nil
   # If you haven't been using Pivotal Tracker since the start of your project,
   # set ITERATION_NUMBER_OFFSET to the number of iterations you want to add to the
   # total of iterations of the project

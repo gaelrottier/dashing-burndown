@@ -8,6 +8,9 @@ This [Dashing](http://shopify.github.io/dashing/) widget allows you to see the c
 
 ## Usage
 
+If you want to add the widget directly in your project, see the [gist about it](https://gist.github.com/gaelrottier/6194375)  
+  
+  
 1. Clone the project `git clone https://github.com/gaelrottier/dashing-burndown.git`.
 2. Run `bundle install`.
 3. Get a Pivotal Tracker API token from your [Account Dashboard](https://www.pivotaltracker.com/profile), or execute `curl -u $USERNAME:$PASSWORD -X GET https://www.pivotaltracker.com/services/v3/tokens/active` in the command line, then set `TOKEN` in jobs/burndown.rb to it.
